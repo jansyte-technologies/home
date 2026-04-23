@@ -1,0 +1,58 @@
+/* Vasool legal pages — typography (colors from site.css :root) */
+.legal-doc h2 {
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  line-height: 1.35;
+}
+
+.legal-doc h2:first-child {
+  margin-top: 0;
+}
+
+.legal-doc h3 {
+  margin-top: 1.25rem;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.legal-doc p {
+  margin-bottom: 1rem;
+  font-size: 0.9375rem;
+  line-height: 1.75;
+  color: var(--text-secondary);
+}
+
+.legal-doc ul {
+  margin: 0 0 1rem 1.125rem;
+  padding: 0;
+  list-style: disc;
+}
+
+.legal-doc li {
+  margin-bottom: 0.5rem;
+  font-size: 0.9375rem;
+  line-height: 1.75;
+  color: var(--text-secondary);
+}
+
+.legal-doc a {
+  color: var(--primary);
+  font-weight: 500;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.legal-doc a:hover {
+  color: var(--primary-hover);
+}
+
+.legal-doc .legal-meta {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  font-style: italic;
+}

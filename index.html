@@ -1,0 +1,1265 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <meta
+      name="description"
+      content="JanSyte Technologies — Smart tools for everyday business. Vasool Management for collections; Tracsy inventory coming soon."
+    />
+    <meta name="theme-color" content="#4C8BF5" />
+    <meta property="og:title" content="JanSyte Technologies" />
+    <meta
+      property="og:description"
+      content="Simple, reliable digital tools for small and growing businesses."
+    />
+    <meta property="og:type" content="website" />
+    <title>JanSyte Technologies — Smart Tools for Everyday Business</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/site.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              ink: "var(--text-primary)",
+              muted: "var(--text-secondary)",
+              surface: "var(--surface)",
+              elevated: "var(--surface-elevated)",
+              subtle: "var(--surface-subtle)",
+              line: "var(--border)",
+              brand: "var(--primary)",
+              "brand-h": "var(--primary-hover)",
+              success: "var(--success)",
+              warning: "var(--warning)",
+              danger: "var(--danger)",
+            },
+            boxShadow: {
+              card: "var(--shadow-card)",
+              nav: "var(--shadow-nav)",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="min-h-screen text-ink antialiased">
+    <header
+      id="site-header"
+      class="sticky top-0 z-50 border-b border-line/70 bg-surface/80 shadow-nav backdrop-blur-md"
+    >
+      <div
+        class="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3 sm:px-6 lg:px-8"
+      >
+        <a
+          href="#top"
+          class="group flex items-center gap-2 font-semibold tracking-tight"
+        >
+          <span
+            class="flex h-9 w-9 items-center justify-center rounded-xl bg-brand text-sm text-white shadow-card transition group-hover:bg-brand-h"
+            aria-hidden="true"
+            >JS</span
+          >
+          <span class="text-sm sm:text-base"
+            >JanSyte
+            <span class="text-muted font-medium">Technologies</span></span
+          >
+        </a>
+        <nav
+          class="hidden items-center gap-1 text-sm font-medium md:flex"
+          aria-label="Primary"
+        >
+          <a
+            class="rounded-lg px-3 py-2 text-muted transition hover:bg-elevated hover:text-ink"
+            href="#about"
+            >About</a
+          >
+          <a
+            class="rounded-lg px-3 py-2 text-muted transition hover:bg-elevated hover:text-ink"
+            href="#products"
+            >Products</a
+          >
+          <a
+            class="rounded-lg px-3 py-2 text-muted transition hover:bg-elevated hover:text-ink"
+            href="#vision"
+            >Vision</a
+          >
+          <a
+            class="rounded-lg px-3 py-2 text-muted transition hover:bg-elevated hover:text-ink"
+            href="#why-us"
+            >Why us</a
+          >
+          <a
+            class="rounded-lg px-3 py-2 text-muted transition hover:bg-elevated hover:text-ink"
+            href="#contact"
+            >Contact</a
+          >
+          <span class="mx-1 h-5 w-px bg-line" aria-hidden="true"></span>
+          <a
+            class="rounded-lg px-3 py-2 text-muted transition hover:bg-elevated hover:text-ink"
+            href="#vasool-features"
+            >Vasool features</a
+          >
+          <a
+            class="rounded-lg px-3 py-2 text-muted transition hover:bg-elevated hover:text-ink"
+            href="privacy.html"
+            >Vasool Privacy</a
+          >
+          <a
+            class="rounded-lg px-3 py-2 text-muted transition hover:bg-elevated hover:text-ink"
+            href="terms.html"
+            >Vasool Terms</a
+          >
+        </nav>
+        <button
+          type="button"
+          id="nav-toggle"
+          class="inline-flex items-center justify-center rounded-xl border border-line bg-surface p-2 text-ink md:hidden"
+          aria-expanded="false"
+          aria-controls="mobile-nav"
+          aria-label="Open menu"
+        >
+          <i class="fa-solid fa-bars" aria-hidden="true"></i>
+        </button>
+      </div>
+      <div
+        id="mobile-nav"
+        class="hidden border-t border-line/80 bg-surface/95 px-4 py-3 backdrop-blur-md md:hidden"
+      >
+        <div class="flex flex-col gap-1 text-sm font-medium">
+          <a
+            class="rounded-lg px-3 py-2 text-muted hover:bg-elevated"
+            href="#about"
+            >About</a
+          >
+          <a
+            class="rounded-lg px-3 py-2 text-muted hover:bg-elevated"
+            href="#products"
+            >Products</a
+          >
+          <a
+            class="rounded-lg px-3 py-2 text-muted hover:bg-elevated"
+            href="#vision"
+            >Vision</a
+          >
+          <a
+            class="rounded-lg px-3 py-2 text-muted hover:bg-elevated"
+            href="#why-us"
+            >Why us</a
+          >
+          <a
+            class="rounded-lg px-3 py-2 text-muted hover:bg-elevated"
+            href="#contact"
+            >Contact</a
+          >
+          <a
+            class="rounded-lg px-3 py-2 text-muted hover:bg-elevated"
+            href="#vasool-features"
+            >Vasool features</a
+          >
+          <a
+            class="rounded-lg px-3 py-2 text-muted hover:bg-elevated"
+            href="privacy.html"
+            >Vasool — Privacy</a
+          >
+          <a
+            class="rounded-lg px-3 py-2 text-muted hover:bg-elevated"
+            href="terms.html"
+            >Vasool — Terms</a
+          >
+        </div>
+      </div>
+    </header>
+
+    <main id="top">
+      <!-- Hero -->
+      <section
+        class="relative overflow-hidden px-4 pb-20 pt-14 sm:px-6 sm:pb-24 sm:pt-20 lg:px-8"
+      >
+        <div
+          class="pointer-events-none absolute inset-0 -z-10 opacity-40"
+          aria-hidden="true"
+        >
+          <div
+            class="absolute -left-24 top-0 h-72 w-72 rounded-full bg-brand/20 blur-3xl"
+          ></div>
+          <div
+            class="absolute right-0 top-32 h-80 w-80 rounded-full bg-success/10 blur-3xl"
+          ></div>
+        </div>
+        <div class="mx-auto max-w-6xl">
+          <div class="reveal reveal-visible max-w-3xl">
+            <p
+              class="text-sm font-semibold uppercase tracking-wider text-brand"
+            >
+              JanSyte Technologies
+            </p>
+            <h1
+              class="mt-3 text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl"
+            >
+              Smart Tools for Everyday Business
+            </h1>
+            <p class="mt-2 text-lg font-medium text-muted sm:text-xl">
+              Built for small businesses, designed for growth.
+            </p>
+            <p
+              class="mt-6 max-w-2xl text-base leading-relaxed text-muted sm:text-lg"
+            >
+              We build simple, powerful digital tools for small and growing
+              businesses, so you can run collections, inventory, and daily
+              operations with clarity.
+            </p>
+            <div class="mt-10 flex flex-col gap-3 sm:flex-row sm:items-center">
+              <a
+                href="https://play.google.com/store/apps/details?id=YOUR_PACKAGE_ID"
+                class="inline-flex items-center justify-center gap-2 rounded-2xl bg-brand px-6 py-3.5 text-sm font-semibold text-white shadow-card transition hover:bg-brand-h hover:shadow-lg focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand"
+              >
+                <i
+                  class="fa-brands fa-google-play text-lg"
+                  aria-hidden="true"
+                ></i>
+                Download Vasool Management
+              </a>
+              <a
+                href="#tracsy"
+                class="inline-flex items-center justify-center gap-2 rounded-2xl border border-line bg-surface px-6 py-3.5 text-sm font-semibold text-ink shadow-card transition hover:border-brand/40 hover:bg-elevated focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand"
+              >
+                Coming Soon: Tracsy
+                <span aria-hidden="true">🚀</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section id="about" class="scroll-mt-24 px-4 py-16 sm:px-6 lg:px-8">
+        <div class="mx-auto max-w-6xl">
+          <div class="reveal">
+            <h2 class="text-3xl font-bold tracking-tight">
+              About JanSyte Technologies
+            </h2>
+            <div class="mt-8 grid gap-8 lg:grid-cols-2 lg:gap-12">
+              <div class="space-y-4 text-muted leading-relaxed">
+                <p>
+                  JanSyte Technologies is a freelance-driven digital solutions
+                  company focused on building practical tools for real-world
+                  businesses. We specialize in creating simple, reliable, and
+                  cost-effective applications that help small and medium
+                  businesses manage their daily operations efficiently.
+                </p>
+                <p>
+                  With hands-on experience working directly with business
+                  owners, we understand real challenges from tracking
+                  collections to managing inventory and scaling operations. Our
+                  solutions are built not just with technology in mind, but with
+                  real users at the center.
+                </p>
+              </div>
+              <div
+                class="rounded-3xl border border-line bg-surface p-8 shadow-card transition hover:-translate-y-0.5 hover:shadow-lg"
+              >
+                <p class="text-sm font-semibold text-brand">Our promise</p>
+                <p class="mt-3 text-lg font-semibold text-ink">
+                  Simplifying business operations with technology.
+                </p>
+                <ul class="mt-6 space-y-3 text-sm text-muted">
+                  <li class="flex gap-3">
+                    <i
+                      class="fa-solid fa-circle-check mt-0.5 text-success"
+                      aria-hidden="true"
+                    ></i>
+                    <span>Practical workflows, not feature bloat</span>
+                  </li>
+                  <li class="flex gap-3">
+                    <i
+                      class="fa-solid fa-circle-check mt-0.5 text-success"
+                      aria-hidden="true"
+                    ></i>
+                    <span>Designed for field teams and SMB owners</span>
+                  </li>
+                  <li class="flex gap-3">
+                    <i
+                      class="fa-solid fa-circle-check mt-0.5 text-success"
+                      aria-hidden="true"
+                    ></i>
+                    <span>Transparent reporting you can trust</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Freelance -->
+      <section class="px-4 py-16 sm:px-6 lg:px-8">
+        <div class="mx-auto max-w-6xl">
+          <div
+            class="reveal rounded-3xl border border-line bg-surface p-8 shadow-card sm:p-10"
+          >
+            <h2 class="text-2xl font-bold">Freelance expertise</h2>
+            <p class="mt-3 max-w-3xl text-muted">
+              Beyond our own products, we have delivered multiple freelance
+              projects across domains each with a focus on performance,
+              usability, and real-world practicality.
+            </p>
+            <div class="mt-8 grid gap-6 md:grid-cols-3">
+              <div class="rounded-2xl bg-elevated p-5">
+                <i class="fa-solid fa-coins text-brand" aria-hidden="true"></i>
+                <h3 class="mt-3 font-semibold">FinTech</h3>
+                <p class="mt-2 text-sm text-muted">
+                  Payment tracking, loan/EMI systems, financial dashboards.
+                </p>
+              </div>
+              <div class="rounded-2xl bg-elevated p-5">
+                <i
+                  class="fa-solid fa-bag-shopping text-brand"
+                  aria-hidden="true"
+                ></i>
+                <h3 class="mt-3 font-semibold">E-commerce</h3>
+                <p class="mt-2 text-sm text-muted">
+                  Product management, order flows, customer journeys.
+                </p>
+              </div>
+              <div class="rounded-2xl bg-elevated p-5">
+                <i
+                  class="fa-solid fa-screwdriver-wrench text-brand"
+                  aria-hidden="true"
+                ></i>
+                <h3 class="mt-3 font-semibold">Custom tools</h3>
+                <p class="mt-2 text-sm text-muted">
+                  Tailored apps for unique operational needs.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Products -->
+      <section id="products" class="scroll-mt-24 px-4 py-16 sm:px-6 lg:px-8">
+        <div class="mx-auto max-w-6xl">
+          <div class="reveal text-center lg:text-left">
+            <h2 class="text-3xl font-bold tracking-tight">Our products</h2>
+            <p class="mx-auto mt-3 max-w-2xl text-muted lg:mx-0">
+              Tools shaped by real conversations with business owners.
+            </p>
+          </div>
+          <div class="mt-12 grid gap-8 lg:grid-cols-2">
+            <article
+              class="reveal flex flex-col rounded-3xl border border-line bg-surface p-8 shadow-card transition hover:-translate-y-1 hover:shadow-lg"
+            >
+              <div class="flex items-start justify-between gap-4">
+                <div>
+                  <h3 class="text-xl font-bold">Vasool Management</h3>
+                  <p class="mt-2 text-sm text-muted">
+                    All-in-one collection, loan, and finance tracking for field
+                    teams and small finance operations.
+                  </p>
+                </div>
+                <span
+                  class="shrink-0 rounded-full bg-elevated px-3 py-1 text-xs font-semibold text-brand"
+                  >Live</span
+                >
+              </div>
+              <ul class="mt-6 flex-1 space-y-2.5 text-sm text-muted">
+                <li class="flex gap-2">
+                  <i
+                    class="fa-solid fa-check mt-0.5 text-brand"
+                    aria-hidden="true"
+                  ></i>
+                  Collection lines, areas, and customers with photos and
+                  documents
+                </li>
+                <li class="flex gap-2">
+                  <i
+                    class="fa-solid fa-check mt-0.5 text-brand"
+                    aria-hidden="true"
+                  ></i>
+                  Loans, EMIs, expenses, investments, and cash flow in one place
+                </li>
+                <li class="flex gap-2">
+                  <i
+                    class="fa-solid fa-check mt-0.5 text-brand"
+                    aria-hidden="true"
+                  ></i>
+                  Partners, role-based access, rich reports, and secure sign-in
+                </li>
+              </ul>
+              <p class="mt-6 text-sm leading-relaxed text-muted">
+                Stay organized, reduce manual errors, and keep everyone aligned
+                with clear paid vs. pending visibility.
+              </p>
+              <div class="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+                <a
+                  href="https://play.google.com/store/apps/details?id=YOUR_PACKAGE_ID"
+                  class="inline-flex flex-1 items-center justify-center gap-2 rounded-2xl bg-brand px-5 py-3 text-sm font-semibold text-white transition hover:bg-brand-h sm:flex-none"
+                >
+                  <i class="fa-brands fa-google-play" aria-hidden="true"></i>
+                  View on Play Store
+                </a>
+                <a
+                  href="#vasool-features"
+                  class="inline-flex flex-1 items-center justify-center rounded-2xl border border-line bg-elevated px-5 py-3 text-sm font-semibold text-ink transition hover:border-brand/40 sm:flex-none"
+                >
+                  Explore features
+                </a>
+              </div>
+            </article>
+
+            <article
+              id="tracsy"
+              class="reveal scroll-mt-28 flex flex-col rounded-3xl border border-dashed border-brand/35 bg-surface/80 p-8 shadow-card backdrop-blur-sm transition hover:-translate-y-1 hover:shadow-lg"
+            >
+              <div class="flex items-start justify-between gap-4">
+                <div>
+                  <h3 class="text-xl font-bold">Tracsy</h3>
+                  <p class="mt-2 text-sm text-muted">
+                    Upcoming inventory management for small-scale businesses.
+                  </p>
+                </div>
+                <span
+                  class="shrink-0 rounded-full bg-warning/15 px-3 py-1 text-xs font-semibold text-warning"
+                  >Coming soon 🚀</span
+                >
+              </div>
+              <ul class="mt-6 flex-1 space-y-2.5 text-sm text-muted">
+                <li class="flex gap-2">
+                  <i
+                    class="fa-solid fa-wand-magic-sparkles mt-0.5 text-brand"
+                    aria-hidden="true"
+                  ></i>
+                  Real-time inventory tracking
+                </li>
+                <li class="flex gap-2">
+                  <i
+                    class="fa-solid fa-wand-magic-sparkles mt-0.5 text-brand"
+                    aria-hidden="true"
+                  ></i>
+                  Stock in/out management
+                </li>
+                <li class="flex gap-2">
+                  <i
+                    class="fa-solid fa-wand-magic-sparkles mt-0.5 text-brand"
+                    aria-hidden="true"
+                  ></i>
+                  Low stock alerts and insights
+                </li>
+                <li class="flex gap-2">
+                  <i
+                    class="fa-solid fa-wand-magic-sparkles mt-0.5 text-brand"
+                    aria-hidden="true"
+                  ></i>
+                  Simple dashboard overview
+                </li>
+                <li class="flex gap-2">
+                  <i
+                    class="fa-solid fa-wand-magic-sparkles mt-0.5 text-brand"
+                    aria-hidden="true"
+                  ></i>
+                  Retail, small warehouses, distributors
+                </li>
+              </ul>
+              <p class="mt-6 text-sm leading-relaxed text-muted">
+                Inventory management made simple full control without the
+                complexity.
+              </p>
+              <a
+                href="#contact"
+                class="mt-8 inline-flex items-center justify-center rounded-2xl border border-line bg-elevated px-5 py-3 text-sm font-semibold text-ink transition hover:border-brand/40"
+              >
+                Notify me
+              </a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Audience -->
+      <section class="px-4 py-12 sm:px-6 lg:px-8">
+        <div class="mx-auto max-w-6xl">
+          <div class="reveal">
+            <h2 class="text-center text-2xl font-bold lg:text-left">
+              Who we build for
+            </h2>
+            <div
+              class="mt-8 flex flex-wrap justify-center gap-2 lg:justify-start"
+            >
+              <span
+                class="rounded-full border border-line bg-surface px-4 py-2 text-sm font-medium text-muted shadow-card"
+                >Small finance businesses</span
+              >
+              <span
+                class="rounded-full border border-line bg-surface px-4 py-2 text-sm font-medium text-muted shadow-card"
+                >Collection agents</span
+              >
+              <span
+                class="rounded-full border border-line bg-surface px-4 py-2 text-sm font-medium text-muted shadow-card"
+                >Retail shop owners</span
+              >
+              <span
+                class="rounded-full border border-line bg-surface px-4 py-2 text-sm font-medium text-muted shadow-card"
+                >Small distributors</span
+              >
+              <span
+                class="rounded-full border border-line bg-surface px-4 py-2 text-sm font-medium text-muted shadow-card"
+                >Multi-user teams</span
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Screenshots -->
+      <section class="px-4 py-16 sm:px-6 lg:px-8">
+        <div class="mx-auto max-w-6xl">
+          <div class="reveal text-center">
+            <h2 class="text-3xl font-bold">Inside the apps</h2>
+            <p class="mt-3 text-muted">
+              Placeholder previews — swap in real screenshots anytime.
+            </p>
+          </div>
+          <div class="mt-12 grid items-start gap-12 md:grid-cols-2">
+            <figure class="reveal text-center">
+              <div class="phone-frame">
+                <div class="phone-frame-inner flex flex-col">
+                  <div class="phone-notch" aria-hidden="true"></div>
+                  <div
+                    class="flex flex-1 flex-col bg-gradient-to-b from-brand/15 to-elevated p-4"
+                  >
+                    <p class="text-left text-xs font-semibold text-ink">
+                      Vasool Management
+                    </p>
+                    <div class="mt-4 space-y-2">
+                      <div class="h-10 rounded-xl bg-surface shadow-sm"></div>
+                      <div class="h-10 rounded-xl bg-surface shadow-sm"></div>
+                      <div class="h-24 rounded-2xl bg-surface shadow-sm"></div>
+                    </div>
+                    <div class="mt-auto flex gap-2 pt-4">
+                      <div class="h-9 flex-1 rounded-lg bg-brand/20"></div>
+                      <div class="h-9 flex-1 rounded-lg bg-line"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <figcaption class="mt-4 text-sm text-muted">
+                Vasool Management — collections &amp; dues
+              </figcaption>
+            </figure>
+            <figure class="reveal text-center">
+              <div class="phone-frame opacity-90">
+                <div class="phone-frame-inner flex flex-col">
+                  <div class="phone-notch" aria-hidden="true"></div>
+                  <div
+                    class="flex flex-1 flex-col bg-gradient-to-b from-warning/10 to-elevated p-4"
+                  >
+                    <p class="text-left text-xs font-semibold text-ink">
+                      Tracsy
+                    </p>
+                    <div class="mt-4 grid grid-cols-2 gap-2">
+                      <div class="h-16 rounded-xl bg-surface shadow-sm"></div>
+                      <div class="h-16 rounded-xl bg-surface shadow-sm"></div>
+                      <div
+                        class="col-span-2 h-28 rounded-2xl bg-surface shadow-sm"
+                      ></div>
+                    </div>
+                    <p class="mt-4 text-xs text-muted">Mockup — coming soon</p>
+                  </div>
+                </div>
+              </div>
+              <figcaption class="mt-4 text-sm text-muted">
+                Tracsy — inventory overview (preview)
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- Vision & Mission -->
+      <section id="vision" class="scroll-mt-24 px-4 py-16 sm:px-6 lg:px-8">
+        <div class="mx-auto max-w-6xl">
+          <div class="reveal grid gap-8 lg:grid-cols-2">
+            <div
+              class="rounded-3xl border border-line bg-surface p-8 shadow-card"
+            >
+              <h2 class="text-2xl font-bold">Our vision</h2>
+              <p class="mt-4 text-muted leading-relaxed">
+                To become a trusted technology partner for small and growing
+                businesses by providing simple, effective, and affordable
+                digital solutions.
+              </p>
+            </div>
+            <div
+              id="mission"
+              class="rounded-3xl border border-line bg-surface p-8 shadow-card"
+            >
+              <h2 class="text-2xl font-bold">Our mission</h2>
+              <ul class="mt-4 space-y-3 text-sm text-muted">
+                <li class="flex gap-2">
+                  <i
+                    class="fa-solid fa-bullseye mt-0.5 text-brand"
+                    aria-hidden="true"
+                  ></i>
+                  Build products that solve real business problems
+                </li>
+                <li class="flex gap-2">
+                  <i
+                    class="fa-solid fa-universal-access mt-0.5 text-brand"
+                    aria-hidden="true"
+                  ></i>
+                  Make technology accessible to non-technical users
+                </li>
+                <li class="flex gap-2">
+                  <i
+                    class="fa-solid fa-rocket mt-0.5 text-brand"
+                    aria-hidden="true"
+                  ></i>
+                  Deliver high-quality freelance solutions with speed and
+                  flexibility
+                </li>
+                <li class="flex gap-2">
+                  <i
+                    class="fa-solid fa-rotate mt-0.5 text-brand"
+                    aria-hidden="true"
+                  ></i>
+                  Evolve continuously from user feedback and market needs
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Why choose -->
+      <section id="why-us" class="scroll-mt-24 px-4 py-16 sm:px-6 lg:px-8">
+        <div class="mx-auto max-w-6xl">
+          <div class="reveal text-center">
+            <h2 class="text-3xl font-bold">Why choose JanSyte</h2>
+            <p class="mt-3 text-muted">
+              Pragmatic delivery, human-centered design.
+            </p>
+          </div>
+          <div class="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            <div
+              class="reveal rounded-2xl border border-line bg-surface p-6 shadow-card"
+            >
+              <i
+                class="fa-solid fa-earth-asia text-xl text-brand"
+                aria-hidden="true"
+              ></i>
+              <h3 class="mt-3 font-semibold">Real-world focus</h3>
+              <p class="mt-2 text-sm text-muted">
+                Solutions grounded in actual workflows—not slide-deck theory.
+              </p>
+            </div>
+            <div
+              class="reveal rounded-2xl border border-line bg-surface p-6 shadow-card"
+            >
+              <i
+                class="fa-solid fa-layer-group text-xl text-brand"
+                aria-hidden="true"
+              ></i>
+              <h3 class="mt-3 font-semibold">Simple yet powerful</h3>
+              <p class="mt-2 text-sm text-muted">
+                Easy for teams to adopt, deep where operators need depth.
+              </p>
+            </div>
+            <div
+              class="reveal rounded-2xl border border-line bg-surface p-6 shadow-card"
+            >
+              <i
+                class="fa-solid fa-piggy-bank text-xl text-brand"
+                aria-hidden="true"
+              ></i>
+              <h3 class="mt-3 font-semibold">Affordable innovation</h3>
+              <p class="mt-2 text-sm text-muted">
+                Built for SMB budgets without cutting corners on quality.
+              </p>
+            </div>
+            <div
+              class="reveal rounded-2xl border border-line bg-surface p-6 shadow-card"
+            >
+              <i
+                class="fa-solid fa-award text-xl text-brand"
+                aria-hidden="true"
+              ></i>
+              <h3 class="mt-3 font-semibold">Proven experience</h3>
+              <p class="mt-2 text-sm text-muted">
+                Multiple successful freelance deliveries across industries.
+              </p>
+            </div>
+            <div
+              class="reveal rounded-2xl border border-line bg-surface p-6 shadow-card"
+            >
+              <i
+                class="fa-solid fa-arrows-rotate text-xl text-brand"
+                aria-hidden="true"
+              ></i>
+              <h3 class="mt-3 font-semibold">Continuous improvement</h3>
+              <p class="mt-2 text-sm text-muted">
+                We listen, adapt, and refine based on real usage and feedback.
+              </p>
+            </div>
+            <div
+              class="reveal rounded-2xl border border-line bg-surface p-6 shadow-card"
+            >
+              <i
+                class="fa-solid fa-award text-xl text-brand"
+                aria-hidden="true"
+              ></i>
+              <h3 class="mt-3 font-semibold">100% Privacy</h3>
+              <p class="mt-2 text-sm text-muted">
+                Your data is always private and secure.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Process -->
+      <section id="approach" class="scroll-mt-24 px-4 py-16 sm:px-6 lg:px-8">
+        <div class="mx-auto max-w-6xl">
+          <div class="reveal">
+            <h2 class="text-3xl font-bold">Our approach</h2>
+            <ol class="mt-10 grid gap-4 md:grid-cols-2 lg:grid-cols-4">
+              <li
+                class="relative rounded-2xl border border-line bg-surface p-5 shadow-card"
+              >
+                <span class="text-xs font-bold text-brand">01</span>
+                <p class="mt-2 font-semibold">Understand the problem</p>
+                <p class="mt-2 text-sm text-muted">
+                  Align on workflows, constraints, and success metrics.
+                </p>
+              </li>
+              <li
+                class="relative rounded-2xl border border-line bg-surface p-5 shadow-card"
+              >
+                <span class="text-xs font-bold text-brand">02</span>
+                <p class="mt-2 font-semibold">Design simple solutions</p>
+                <p class="mt-2 text-sm text-muted">
+                  Prioritize clarity over complexity at every step.
+                </p>
+              </li>
+              <li
+                class="relative rounded-2xl border border-line bg-surface p-5 shadow-card"
+              >
+                <span class="text-xs font-bold text-brand">03</span>
+                <p class="mt-2 font-semibold">Build for scale</p>
+                <p class="mt-2 text-sm text-muted">
+                  Architecture that grows with your operations.
+                </p>
+              </li>
+              <li
+                class="relative rounded-2xl border border-line bg-surface p-5 shadow-card"
+              >
+                <span class="text-xs font-bold text-brand">04</span>
+                <p class="mt-2 font-semibold">Improve with feedback</p>
+                <p class="mt-2 text-sm text-muted">
+                  Ship, measure, refine—on a practical cadence.
+                </p>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      <!-- Vasool Management — full feature list -->
+      <section
+        id="vasool-features"
+        class="scroll-mt-24 px-4 py-16 sm:px-6 lg:px-8"
+      >
+        <div class="mx-auto max-w-6xl">
+          <div class="reveal text-center lg:text-left">
+            <p
+              class="text-sm font-semibold uppercase tracking-wider text-brand"
+            >
+              Vasool Management
+            </p>
+            <h2 class="mt-2 text-3xl font-bold tracking-tight">
+              Features built for real collections &amp; finance work
+            </h2>
+            <p class="mx-auto mt-3 max-w-3xl text-muted lg:mx-0">
+              From daily collection lines to loans, expenses, partners, and
+              exports. Everything stays connected so your team sees one clear
+              picture.
+            </p>
+          </div>
+          <div class="mt-12 grid gap-6 md:grid-cols-2">
+            <div
+              class="reveal rounded-2xl border border-line bg-surface p-6 shadow-card transition hover:-translate-y-0.5 hover:shadow-lg"
+            >
+              <div
+                class="flex h-11 w-11 items-center justify-center rounded-xl bg-brand/10 text-brand"
+              >
+                <i
+                  class="fa-solid fa-location-dot text-lg"
+                  aria-hidden="true"
+                ></i>
+              </div>
+              <h3 class="mt-4 text-lg font-semibold">Collection management</h3>
+              <ul class="mt-3 space-y-2 text-sm text-muted">
+                <li class="flex gap-2">
+                  <span
+                    class="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-brand"
+                    aria-hidden="true"
+                  ></span>
+                  Create and manage unlimited daily, weekly, and monthly
+                  collection lines
+                </li>
+                <li class="flex gap-2">
+                  <span
+                    class="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-brand"
+                    aria-hidden="true"
+                  ></span>
+                  Add areas and customers with photos and documents
+                </li>
+                <li class="flex gap-2">
+                  <span
+                    class="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-brand"
+                    aria-hidden="true"
+                  ></span>
+                  Clear view of paid and pending amounts
+                </li>
+              </ul>
+            </div>
+            <div
+              class="reveal rounded-2xl border border-line bg-surface p-6 shadow-card transition hover:-translate-y-0.5 hover:shadow-lg"
+            >
+              <div
+                class="flex h-11 w-11 items-center justify-center rounded-xl bg-brand/10 text-brand"
+              >
+                <i
+                  class="fa-solid fa-hand-holding-dollar text-lg"
+                  aria-hidden="true"
+                ></i>
+              </div>
+              <h3 class="mt-4 text-lg font-semibold">Loans &amp; payments</h3>
+              <ul class="mt-3 space-y-2 text-sm text-muted">
+                <li class="flex gap-2">
+                  <span
+                    class="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-brand"
+                    aria-hidden="true"
+                  ></span>
+                  Add and manage loans with ease
+                </li>
+                <li class="flex gap-2">
+                  <span
+                    class="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-brand"
+                    aria-hidden="true"
+                  ></span>
+                  Track EMI payments and due schedules
+                </li>
+                <li class="flex gap-2">
+                  <span
+                    class="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-brand"
+                    aria-hidden="true"
+                  ></span>
+                  Access complete payment history anytime
+                </li>
+              </ul>
+            </div>
+            <div
+              class="reveal rounded-2xl border border-line bg-surface p-6 shadow-card transition hover:-translate-y-0.5 hover:shadow-lg"
+            >
+              <div
+                class="flex h-11 w-11 items-center justify-center rounded-xl bg-brand/10 text-brand"
+              >
+                <i
+                  class="fa-solid fa-chart-line text-lg"
+                  aria-hidden="true"
+                ></i>
+              </div>
+              <h3 class="mt-4 text-lg font-semibold">Financial tracking</h3>
+              <ul class="mt-3 space-y-2 text-sm text-muted">
+                <li class="flex gap-2">
+                  <span
+                    class="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-brand"
+                    aria-hidden="true"
+                  ></span>
+                  Monitor daily collections and pending EMIs
+                </li>
+                <li class="flex gap-2">
+                  <span
+                    class="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-brand"
+                    aria-hidden="true"
+                  ></span>
+                  Record and manage daily expenses
+                </li>
+                <li class="flex gap-2">
+                  <span
+                    class="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-brand"
+                    aria-hidden="true"
+                  ></span>
+                  Track investments efficiently
+                </li>
+                <li class="flex gap-2">
+                  <span
+                    class="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-brand"
+                    aria-hidden="true"
+                  ></span>
+                  Clear insights into cash flow
+                </li>
+              </ul>
+            </div>
+            <div
+              class="reveal rounded-2xl border border-line bg-surface p-6 shadow-card transition hover:-translate-y-0.5 hover:shadow-lg"
+            >
+              <div
+                class="flex h-11 w-11 items-center justify-center rounded-xl bg-brand/10 text-brand"
+              >
+                <i
+                  class="fa-solid fa-user-group text-lg"
+                  aria-hidden="true"
+                ></i>
+              </div>
+              <h3 class="mt-4 text-lg font-semibold">Partner management</h3>
+              <ul class="mt-3 space-y-2 text-sm text-muted">
+                <li class="flex gap-2">
+                  <span
+                    class="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-brand"
+                    aria-hidden="true"
+                  ></span>
+                  Add and manage business partners or agents
+                </li>
+                <li class="flex gap-2">
+                  <span
+                    class="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-brand"
+                    aria-hidden="true"
+                  ></span>
+                  Role-based permissions for each user
+                </li>
+                <li class="flex gap-2">
+                  <span
+                    class="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-brand"
+                    aria-hidden="true"
+                  ></span>
+                  Control access based on responsibilities
+                </li>
+              </ul>
+            </div>
+            <div
+              class="reveal rounded-2xl border border-line bg-surface p-6 shadow-card transition hover:-translate-y-0.5 hover:shadow-lg"
+            >
+              <div
+                class="flex h-11 w-11 items-center justify-center rounded-xl bg-brand/10 text-brand"
+              >
+                <i
+                  class="fa-solid fa-file-lines text-lg"
+                  aria-hidden="true"
+                ></i>
+              </div>
+              <h3 class="mt-4 text-lg font-semibold">Reports &amp; insights</h3>
+              <ul class="mt-3 space-y-2 text-sm text-muted">
+                <li class="flex gap-2">
+                  <span
+                    class="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-brand"
+                    aria-hidden="true"
+                  ></span>
+                  Daily collection summaries
+                </li>
+                <li class="flex gap-2">
+                  <span
+                    class="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-brand"
+                    aria-hidden="true"
+                  ></span>
+                  Customer, loan, and payment reports
+                </li>
+                <li class="flex gap-2">
+                  <span
+                    class="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-brand"
+                    aria-hidden="true"
+                  ></span>
+                  Expense and investment reports
+                </li>
+                <li class="flex gap-2">
+                  <span
+                    class="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-brand"
+                    aria-hidden="true"
+                  ></span>
+                  Advanced reports: Plan, Ledger, and Multiline
+                </li>
+                <li class="flex gap-2">
+                  <span
+                    class="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-brand"
+                    aria-hidden="true"
+                  ></span>
+                  Export or share reports easily
+                </li>
+              </ul>
+            </div>
+            <div
+              class="reveal rounded-2xl border border-line bg-surface p-6 shadow-card transition hover:-translate-y-0.5 hover:shadow-lg"
+            >
+              <div
+                class="flex h-11 w-11 items-center justify-center rounded-xl bg-brand/10 text-brand"
+              >
+                <i
+                  class="fa-solid fa-shield-halved text-lg"
+                  aria-hidden="true"
+                ></i>
+              </div>
+              <h3 class="mt-4 text-lg font-semibold">Security &amp; privacy</h3>
+              <ul class="mt-3 space-y-2 text-sm text-muted">
+                <li class="flex gap-2">
+                  <span
+                    class="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-brand"
+                    aria-hidden="true"
+                  ></span>
+                  Secure login with password protection
+                </li>
+                <li class="flex gap-2">
+                  <span
+                    class="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-brand"
+                    aria-hidden="true"
+                  ></span>
+                  Fingerprint and face unlock support
+                </li>
+                <li class="flex gap-2">
+                  <span
+                    class="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-brand"
+                    aria-hidden="true"
+                  ></span>
+                  Built to keep your business data protected
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials -->
+      <section class="px-4 py-16 sm:px-6 lg:px-8">
+        <div class="mx-auto max-w-6xl">
+          <h2 class="reveal text-center text-3xl font-bold">What users say</h2>
+          <div class="mt-10 grid gap-6 md:grid-cols-3">
+            <blockquote
+              class="reveal rounded-2xl border border-line bg-surface p-6 shadow-card"
+            >
+              <p class="text-sm leading-relaxed text-muted">
+                “This app is very practical and helpful for managing daily
+                collections. The design is simple and user-friendly, which makes
+                it easy to add borrowers, track payments, and manage collection
+                records. It saves time and keeps everything organized in one
+                place. A great tool for anyone handling finance or collection
+                work.”
+              </p>
+              <footer class="mt-4 text-xs font-semibold text-ink">
+                — Karthikeyan , Erode
+              </footer>
+            </blockquote>
+            <blockquote
+              class="reveal rounded-2xl border border-line bg-surface p-6 shadow-card"
+            >
+              <p class="text-sm leading-relaxed text-muted">
+                “This is by far the best app for Vasool management. It perfectly
+                handles daily, weekly, and monthly collection lines without any
+                hassle. The reports feature saves me a lot of time calculating
+                pending dues, and the data backup is very reliable. The fact
+                that it supports Tamil makes it incredibly easy for local staff
+                to use.”
+              </p>
+              <footer class="mt-4 text-xs font-semibold text-ink">
+                — Bhuvanesh, Thiruppur
+              </footer>
+            </blockquote>
+            <blockquote
+              class="reveal rounded-2xl border border-line bg-surface p-6 shadow-card"
+            >
+              <p class="text-sm leading-relaxed text-muted">
+                “App use panna romba smooth-aa irukku, user-friendly design.
+                Edit & delete access users kuremove pannikala and yaaru vasool
+                vachanga-nu clear-aa track panna mudiyuthu. Line Partner-ku
+                plan, investment, expenses ellam kaatra option irukku, adhae
+                normal users-ku hide panna mudiyum idhu romba useful feature.
+                Multiple users use panna best app, work ellam easy-aa complete
+                aaguthu. Super!”
+              </p>
+              <footer class="mt-4 text-xs font-semibold text-ink">
+                — An user
+              </footer>
+            </blockquote>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section
+        id="contact"
+        class="scroll-mt-24 px-4 pb-20 pt-8 sm:px-6 lg:px-8"
+      >
+        <div class="mx-auto max-w-6xl">
+          <div class="reveal max-w-2xl">
+            <h2 class="text-2xl font-bold">Contact</h2>
+            <p class="mt-3 text-muted">
+              Tell us about your business. We will get back to you.
+            </p>
+            <div
+              class="mt-6 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:gap-4 text-sm"
+            >
+              <a
+                href="mailto:jansyte@gmail.com"
+                class="inline-flex items-center gap-3 rounded-xl border border-line bg-elevated px-4 py-3 font-medium text-ink transition hover:border-brand/40"
+              >
+                <i
+                  class="fa-solid fa-envelope text-brand"
+                  aria-hidden="true"
+                ></i>
+                jansyte@gmail.com
+              </a>
+              <a
+                href="https://wa.me/919585099986"
+                class="inline-flex items-center gap-3 rounded-xl border border-line bg-elevated px-4 py-3 font-medium text-ink transition hover:border-brand/40"
+              >
+                <i
+                  class="fa-brands fa-whatsapp text-success"
+                  aria-hidden="true"
+                ></i>
+                WhatsApp
+              </a>
+            </div>
+            <!-- <div>
+              <form id="contact-form" class="space-y-4" novalidate>
+                <div>
+                  <label for="name" class="text-sm font-medium text-ink"
+                    >Name</label
+                  >
+                  <input
+                    id="name"
+                    name="name"
+                    type="text"
+                    autocomplete="name"
+                    class="mt-1 w-full rounded-xl border border-line bg-elevated px-4 py-3 text-sm text-ink outline-none ring-brand/0 transition focus:border-brand/50 focus:ring-2 focus:ring-brand/20"
+                    placeholder="Your name"
+                  />
+                </div>
+                <div>
+                  <label for="email" class="text-sm font-medium text-ink"
+                    >Email</label
+                  >
+                  <input
+                    id="email"
+                    name="email"
+                    type="email"
+                    autocomplete="email"
+                    class="mt-1 w-full rounded-xl border border-line bg-elevated px-4 py-3 text-sm text-ink outline-none focus:border-brand/50 focus:ring-2 focus:ring-brand/20"
+                    placeholder="you@company.com"
+                  />
+                </div>
+                <div>
+                  <label for="message" class="text-sm font-medium text-ink"
+                    >Message</label
+                  >
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows="4"
+                    class="mt-1 w-full resize-y rounded-xl border border-line bg-elevated px-4 py-3 text-sm text-ink outline-none focus:border-brand/50 focus:ring-2 focus:ring-brand/20"
+                    placeholder="How can we help?"
+                  ></textarea>
+                </div>
+                <button
+                  type="submit"
+                  class="w-full rounded-2xl bg-brand py-3 text-sm font-semibold text-white transition hover:bg-brand-h sm:w-auto sm:px-8"
+                >
+                  Send message
+                </button>
+                <p
+                  id="form-status"
+                  class="hidden text-sm text-muted"
+                  role="status"
+                ></p>
+              </form>
+            </div> -->
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="border-t border-line bg-surface/90 py-12 backdrop-blur">
+      <div
+        class="mx-auto flex max-w-6xl flex-col gap-8 px-4 sm:px-6 lg:flex-row lg:items-start lg:justify-between lg:px-8"
+      >
+        <div>
+          <p class="font-semibold">JanSyte Technologies</p>
+          <p class="mt-2 max-w-sm text-sm text-muted">
+            Smart tools for everyday business.
+          </p>
+        </div>
+        <div class="grid grid-cols-2 gap-8 text-sm sm:grid-cols-3">
+          <div>
+            <p class="font-semibold text-ink">Explore</p>
+            <ul class="mt-3 space-y-2 text-muted">
+              <li><a class="hover:text-brand" href="#top">Home</a></li>
+              <li><a class="hover:text-brand" href="#products">Products</a></li>
+              <li><a class="hover:text-brand" href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div>
+            <p class="font-semibold text-ink">Vasool Management</p>
+            <ul class="mt-3 space-y-2 text-muted">
+              <li>
+                <a class="hover:text-brand" href="#vasool-features"
+                  >Vasool features</a
+                >
+              </li>
+            </ul>
+            <ul class="mt-3 space-y-2 text-muted">
+              <li>
+                <a class="hover:text-brand" href="privacy.html"
+                  >Privacy Policy</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-brand" href="terms.html"
+                  >Terms &amp; Conditions</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!-- <div>
+            <p class="font-semibold text-ink">Social</p>
+            <ul class="mt-3 flex gap-3 text-muted">
+              <li>
+                <a href="#" class="hover:text-brand" aria-label="LinkedIn"
+                  ><i
+                    class="fa-brands fa-linkedin text-lg"
+                    aria-hidden="true"
+                  ></i
+                ></a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-brand" aria-label="GitHub"
+                  ><i class="fa-brands fa-github text-lg" aria-hidden="true"></i
+                ></a>
+              </li>
+            </ul>
+          </div> -->
+        </div>
+      </div>
+      <div
+        class="mx-auto mt-10 max-w-6xl border-t border-line/80 px-4 pt-6 text-center text-xs text-muted sm:px-6 lg:px-8"
+      >
+        © <span id="year"></span> JanSyte Technologies. All rights reserved.
+      </div>
+    </footer>
+
+    <script src="js/site.js" defer></script>
+  </body>
+</html>
